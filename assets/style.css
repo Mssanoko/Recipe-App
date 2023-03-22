@@ -1,0 +1,29 @@
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 100px;
+    letter-spacing: 2px;
+    font-family: 'Bona Nova', serif;
+}
+
+.container{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    gap: 10px 20px;
+} 
+
+.card {
+  border: solid 2px #ddd;
+}
+
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
