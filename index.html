@@ -1,68 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What Am I Eating Today?</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
     <h1>What Am I Eating Today ?</h1>
-    <br>
+    <br />
     <div class="container">
-        <div class="card">
-            <div class="card-title">
-                <h3>Meal</h3>
-            </div>
-            <div class="card-body">
-                    <select id="meal-category" name="category">
-                      <option value="">--Pick a Category--</option>
-                      <option value="beef">Beef</option>
-                      <option value="chicken">Chicken</option>
-                      <option value="pork">Pork</option>
-                      <option value="seafood">Seafood</option>
-                      <option value="pasta">Pasta</option>
-                      <option value="rice">Rice</option>
-                      <option value="vegan">Vegan</option>
-                      <option value="vegetarian">Vegetarian</option>
-                    </select>
-                    <select id="category" name="category">
-                        <option value="">--Pick an Area--</option>
-                        <option value="british">British</option>
-                        <option value="chicken">Chicken</option>
-                        <option value="pork">Pork</option>
-                        <option value="seafood">Seafood</option>
-                        <option value="pasta">Pasta</option>
-                        <option value="rice">Rice</option>
-                        <option value="vegan">Vegan</option>
-                        <option value="vegetarian">Vegetarian</option>
-                      </select>
-                      <select id="category" name="category">
-                        <option value="">--Pick a Category--</option>
-                        <option value="beef">Beef</option>
-                        <option value="chicken">Chicken</option>
-                        <option value="pork">Pork</option>
-                        <option value="seafood">Seafood</option>
-                        <option value="pasta">Pasta</option>
-                        <option value="rice">Rice</option>
-                        <option value="vegan">Vegan</option>
-                        <option value="vegetarian"></option>
-                      </select>
+      <div class="card">
+        <div class="card-title">
+          <h3>Meal</h3>
+        </div>
+        <div class="card-body" class="custom-select">
+          <label class="title-option">Category</label>
+          <br>
+          <select id="meal-category-choice" name="category">
+            <option value="">--Pick a Category--</option>
+            <option value="beef">Beef</option>
+            <option value="chicken">Chicken</option>
+            <option value="chicken">Lamb</option>
+            <option value="pasta">Lentils</option>
+            <option value="pork">Pasta</option>
+            <option value="seafood">Pork</option>
+            <option value="rice">Salmon</option>
+            <option value="rice">Seafood</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+          </select>
+          <br />
+          <label>Area</label>
+          <br>
+          <select id="meal-area-choice" name="area">
+            <option value="">--Pick an Area--</option>
+            <option value="american">American</option>
+            <option value="british">British</option>
+            <option value="canadian">Canadian</option>
+            <option value="chinese">Chinese</option>
+            <option value="french">French</option>
+            <option value="indian">Indian</option>
+            <option value="italian">Italian</option>
+          </select>
+          <br />
+          <label>Ingredient</label>
+          <br>
+          <select id="meal-ingredient-choice" name="ingredient">
+            <option value="">--Pick an Ingredient --</option>
+            <option value="butter">Butter</option>
+            <option value="eggs">Eggs</option>
+            <option value="garlic">Garlic</option>
+            <option value="mushrooms">Mushrooms</option>
+            <option value="olive oil">Olive Oil</option>
+            <option value="onions">Onions</option>
+            <option value="garlic">Garlic</option>
+            <option value="potatoes">Peppers</option>
+            <option value="potatoes">Potatoes</option>
+            <option value="potatoes">Zucchini</option>
+          </select>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <h3>Drink</h3>
+        </div>
+        <div class="card-body">
+            <label>Category</label>
+            <br>
+            <select id="drink-category-choice" name="category">
+                <option value="">--Pick a Category--</option>
+                <option value="beer">Beer</option>
+                <option value="cocktail">Cocktail</option>
+                <option value="coffee">Coffee</option>
+                <option value="juice">Juice</option>
+                <option value="soda">Soda</option>
+              </select>
+              <br>
+              <label>Alcoholic</label>
+              <br>
+              <select id="drink-alcohol-choice" name="area">
+                <option value="">--Alcoholic/Non-Alcoholic--</option>
+                <option value="alcohol">Alcohol</option>
+                <option value="non-alcohol">Non-Alcohol</option>
+                <option value="optional">Optional</option>
+              </select>
+              <br/>
+              <label>Ingredient</label>
+              <br>
+              <select id="drink-ingredient-choice" name="ingredient">
+                <option value="">--Pick an Ingredient --</option>
+                <option value="coffee">Coffee</option>
+                <option value="gin">Gin</option>
+                <option value="lemon">Lemon</option>
+                <option value="milk">Milk</option>
+                <option value="rum">Rum</option>
+                <option value="tequila">Tequila</option>
+                <option value="vodka">Vodka</option>
+                <option value="whisky">Whisky</option>
+              </select>
             </div>
         </div>
-        <div class="card">
-            <div class="card-title">
-                <h3>Drink</h3>
-            </div>
-            <div class="card-body">
-
-            </div>
-        </div>
-          
+      </div>
+      <br>
+      <br>
+      <div class="button">
+        <button class="generate-btn">Generate</button>
+        <button hidden class="refresh-btn">Refresh</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>

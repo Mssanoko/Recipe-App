@@ -10,7 +10,6 @@ h1 {
 
 .container{
     justify-content: center;
-    text-align: center;
     align-items: center;
     flex-direction: row;
     display: flex;
@@ -18,7 +17,11 @@ h1 {
 } 
 
 .card {
-  border: solid 2px #ddd;
+  border: solid 2px ;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 30px 50px 30px 50px;
+  box-shadow: 5px 10px #888888;
 }
 
 .card-title {
@@ -26,4 +29,12 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 800;
+}
+
+label {
+    font-style: italic;
+}
+
+.button {
+    text-align: center;
 }
